@@ -60,7 +60,7 @@ a:hover {
 }
 
 .btn {
-    color: steelblue;
+    color: linen;
 }
 
 .btn:hover {
@@ -92,4 +92,25 @@ a:hover {
 .breadcrumb {
     background-color: rgb(70, 130, 180, 0.7);
 
+}
+
+#email  {
+    color: darkmagenta;
+}
+
+#email:hover {
+    color: palevioletred;
+}
+
+#tel {
+    color: darkmagenta;
+}
+
+#tel:hover {
+    color: palevioletred;
+}
+
+h5 {
+    font-family: "Lobster", cursive;
+    color: steelblue;
 }
