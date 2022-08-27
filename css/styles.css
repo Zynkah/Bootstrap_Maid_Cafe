@@ -1,0 +1,99 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: azure;
+}
+
+h1 {
+    font-family: "Lobster", cursive;
+    text-shadow: 2px 2px palevioletred; 
+}
+
+h2, h3 {
+    font-family: "Lobster", cursive;
+    color: salmon;
+}
+
+h2 {
+    color: palevioletred;
+    text-shadow: 1px 1px salmon; 
+}
+
+header h2 {
+    color: linen;
+    text-shadow: 1px 1px steelblue; 
+}
+
+p {
+    color: indigo;
+    text-shadow: 1px 1px palevioletred;
+}
+
+.site-footer {
+    background-color: pink;
+    padding: 10px 0px;
+    color: palevioletred;
+    text-shadow: 1px 1px indigo;
+}
+
+a {
+    color: linen;
+}
+
+a:hover {
+    color: steelblue;
+    text-decoration: none;
+}
+
+.jumbotron {
+    padding: 30px;
+    background-color: pink;
+    color: linen;
+    margin: 0;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+
+}
+
+.navbar {
+    background-color: palevioletred;
+}
+
+.btn {
+    color: linen;
+    text-shadow: 1px 1px indigo;
+}
+
+.btn:hover {
+    color: salmon;
+    text-decoration: none;
+}
+
+.list-group-item {
+    background-color: palevioletred;
+    color: pink;
+}
+
+.list-group-item:hover {
+    color: palevioletred;
+}
+
+#footer-active {
+    background-color: steelblue;
+}
+
+.card {
+    margin: 15px 0px;
+}
+
+a, .nav-link {
+    color: indigo;
+}
+
+.card-header {
+    background-color: salmon;
+}
+
