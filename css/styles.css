@@ -60,6 +60,7 @@ a:hover {
 }
 
 .btn {
+    font-family: "Lobster", cursive;
     color: linen;
 }
 
@@ -111,6 +112,11 @@ a:hover {
 }
 
 h5 {
+    font-family: "Lobster", cursive;
+    color: steelblue;
+}
+
+label {
     font-family: "Lobster", cursive;
     color: steelblue;
 }
