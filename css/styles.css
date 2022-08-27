@@ -24,23 +24,21 @@ header h2 {
 }
 
 p {
-    color: indigo;
-    text-shadow: 1px 1px palevioletred;
+    color: darkmagenta;
 }
 
 .site-footer {
     background-color: pink;
     padding: 10px 0px;
     color: palevioletred;
-    text-shadow: 1px 1px indigo;
 }
 
 a {
-    color: linen;
+    color: darkmagenta;
 }
 
 a:hover {
-    color: steelblue;
+    color: rgb(70, 130, 180, 0.5);
     text-decoration: none;
 }
 
@@ -55,7 +53,6 @@ a:hover {
     padding: 50px 0;
     border-bottom: 1px ridge;
     min-height: 200px;
-
 }
 
 .navbar {
@@ -63,8 +60,7 @@ a:hover {
 }
 
 .btn {
-    color: linen;
-    text-shadow: 1px 1px indigo;
+    color: steelblue;
 }
 
 .btn:hover {
@@ -82,18 +78,18 @@ a:hover {
 }
 
 #footer-active {
-    background-color: steelblue;
+    background-color: rgb(70, 130, 180, 0.8);
 }
 
 .card {
     margin: 15px 0px;
 }
 
-a, .nav-link {
-    color: indigo;
-}
-
 .card-header {
     background-color: salmon;
 }
 
+.breadcrumb {
+    background-color: rgb(70, 130, 180, 0.7);
+
+}
