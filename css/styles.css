@@ -24,7 +24,7 @@ header h2 {
 }
 
 p {
-    color: darkmagenta;
+    color: steelblue;
 }
 
 .site-footer {
@@ -34,7 +34,7 @@ p {
 }
 
 a {
-    color: darkmagenta;
+    color: palevioletred;
 }
 
 a:hover {
@@ -90,8 +90,13 @@ a:hover {
     background-color: salmon;
 }
 
+.card-body {
+    background-color: lavenderblush;
+    color: palevioletred;
+}
+
 .breadcrumb {
-    background-color: rgb(70, 130, 180, 0.7);
+    background-color: lavenderblush;
 
 }
 
