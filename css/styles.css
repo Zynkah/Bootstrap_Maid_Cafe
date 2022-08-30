@@ -126,3 +126,8 @@ label {
     color: steelblue;
 }
 
+
+#homeCarousel {
+    background-color: pink;
+    border: solid palevioletred;
+}
