@@ -1,0 +1,154 @@
+$color-primary: rgb(216, 112, 147);
+$color-secondary: rgb(250, 128, 114);
+$color-pale: rgb(250, 240, 230);
+$color-mid: rgba(70, 130, 180, 0.8);
+$color-dark: rgb(139, 0, 139);
+$color-header: rgba(255, 192, 203, 0.8);
+$color-accent: rgb(255, 240, 245);
+$color-body: rgb(240, 255, 255);
+
+$body-font: "Open Sans", sans-serif;
+$header-font: "Lobster", cursive;
+
+body {
+    font-family: $body-font;
+    background-color: $color-body;
+}
+
+h1 {
+    font-family: $header-font;
+    text-shadow: 2px 2px $color-primary; 
+}
+
+h2, h3 {
+    font-family: $header-font;
+    color: $color-secondary;
+}
+
+h2 {
+    color: $color-primary;
+    text-shadow: 1px 1px $color-secondary; 
+}
+
+header {
+    h2 {
+    color: $color-pale;
+    text-shadow: 1px 1px $color-mid; 
+    }
+}
+
+p {
+    color: $color-mid;
+}
+
+.site-footer {
+    background-color: $color-header;
+    padding: 10px 0px;
+    color: $color-primary;
+}
+
+a {
+    color: $color-primary;
+}
+
+a:hover {
+    color: $color-mid;
+    text-decoration: none;
+}
+
+.jumbotron {
+    padding: 30px;
+    background-color: $color-header;
+    color: $color-pale;
+    margin: 0;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    background-color: $color-primary;
+}
+
+.btn {
+    font-family: $header-font;
+    color: $color-pale;
+}
+
+.btn:hover {
+    color: $color-secondary;
+    text-decoration: none;
+}
+
+.list-group-item {
+    background-color: $color-primary;
+    color: $color-accent;
+}
+
+.list-group-item:hover {
+    color: $color-primary;
+}
+
+#footer-active {
+    background-color: $color-mid;
+}
+
+.card {
+    margin: 15px 0px;
+}
+
+.card-header {
+    background-color: $color-secondary;
+}
+
+.card-body {
+    background-color: $color-accent;
+    color: $color-primary;
+}
+
+.breadcrumb {
+    background-color: $color-accent;
+
+}
+
+#email  {
+    color: $color-dark;
+}
+
+#email:hover {
+    color: $color-primary;
+}
+
+#tel {
+    color: $color-dark;
+}
+
+#tel:hover {
+    color: $color-primary;
+}
+
+h5 {
+    font-family: $header-font;
+    color: $color-mid;
+}
+
+label {
+    font-family: $header-font;
+    color: $color-mid;
+}
+
+
+#homeCarousel {
+    background-color: $color-header;
+    border: solid $color-primary;
+}
+
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
