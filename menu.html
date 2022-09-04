@@ -120,94 +120,669 @@
                 <h2>Menu</h2>
             </div>
 
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="card">
-                        <h3 class="card-header text-white">Coffee</h3>
-                        <div class="card-body">
-                            <dl class="row">
-                                <dt class="col-6"><a href="#americano" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Small $3.00 <br /> Medium $4.00 <br /> Large $5.00">Americano</a></dt>
-                                <dt class="col-6"><a href="#latte" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Small $4.00 <br /> Medium $5.00 <br /> Large $6.00">Latte</a></dt>
-                                <dt class="col-6"><a href="#cappuccino" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Small $4.00 <br /> Medium $5.00 <br /> Large $6.00">Cappuccino</a></dt> 
-                                 <dt class="col-6"><a href="#mocha" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Small $4.00 <br /> Medium $5.00 <br /> Large $6.00">Mocha</a></dt>  
-                                <dt class="col-6"><a href="#macchiato" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Small $4.00 <br /> Medium $5.00 <br /> Large $6.00">Macchiato</a></dt>
-                                <dt class="col-6"><a href="#flatWhite" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Small $4.00 <br /> Medium $5.00 <br /> Large $6.00">Flat White</a></dt>    
-                            </dl>
+            <div class="container">
+                <div class="row row-content">
+                    <div class="col-sm-6">
+                        <div class="card">                 
+                            <h2 class="card-header text-white">Coffee</h2>
+                            <div class="card-body" id="accordian">
+                                <dl class="row">
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a data-toggle="collapse" data-target="#americano">
+                                                Americano
+                                                </a>
+                                            </p> 
+                                            <div class="collapse" id="americano" data-parent="#accordian">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/americano.jpg" alt="americano" width="150px"/> <hr />
+                                                        Sm $3.00 <br /> Md $4.00 <br /> Lg $5.00
+                                                    </p>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                    </dt>                   
+                                    <dt class="col-6">
+                                        <div role="tab">    
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#latte">
+                                        Latte
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="latte" data-parent="#accordian">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/latte.jpg" alt="latte" width="150px"/> <hr />
+                                                        Sm $4.00 <br /> Md $5.00 <br /> Lg $6.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#cappuccino">
+                                                    Cappuccino
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="cappuccino" data-parent="#accordian">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/cappuccino.jpg" alt="cappuccino" width="150px"/> <hr />
+                                                        Sm $4.00 <br /> Md $5.00 <br /> Lg $6.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#mocha">
+                                                Mocha
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="mocha" data-parent="#accordian">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/mocha.jpg" alt="mocha" width="150px"/> <hr />
+                                                        Sm $4.00 <br /> Md $5.00 <br /> Lg $6.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#macchiato">
+                                                Macciato
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="macchiato" data-parent="#accordian">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/macchiato.jpg" alt="macchiato" width="150px"/> <hr />
+                                                        Sm $4.00 <br /> Md $5.00 <br /> Lg $6.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#flatWhite">
+                                                Flat White
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="flatWhite" data-parent="#accordian">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/flatWhite.jpg" alt="flatWhite" width="150px"/> <hr />
+                                                        Sm $4.00 <br /> Md $5.00 <br /> Lg $6.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>    
+                                </dl>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card">
-                        <h3 class="card-header text-white">Tea</h3>
-                        <div class="card-body">
-                            <dl class="row">
-                                <dt class="col-6"><a href="#greenTea" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Small $3.50 <br /> Medium $4.50 <br /> Large $5.50">Green Tea</a></dt>
-                                <dt class="col-6"><a href="#earlGrey" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Small $3.50 <br /> Medium $4.50 <br /> Large $5.50">Earl Grey</a></dt>
-                                <dt class="col-6"><a href="#spicedChai" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Small $3.50 <br /> Medium $4.50 <br /> Large $5.50">Spiced Chai</a></dt>
-                                <dt class="col-6"><a href="#blackCurrant" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Small $3.50 <br /> Medium $4.50 <br /> Large $5.50">Black Currant</a></dt>
-                                <dt class="col-6"><a href="#roobios" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Small $3.50 <br /> Medium $4.50 <br /> Large $5.50">Roobios</a></dt>
-                                <dt class="col-6"><a href="#peppermint" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Small $3.50 <br /> Medium $4.50 <br /> Large $5.50">Peppermint</a></dt>
-                            </dl>
+                    <div class="col-sm-6">
+                        <div class="card">                 
+                            <h2 class="card-header text-white">Tea</h2>
+                            <div class="card-body" id="accordian_2">
+                                <dl class="row">
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a data-toggle="collapse" data-target="#greenTea">
+                                                Green Tea
+                                                </a>
+                                            </p> 
+                                            <div class="collapse" id="greenTea" data-parent="#accordian_2">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/greenTea.jpg" alt="greenTea" width="150px"/> <hr />
+                                                        Sm $3.50 <br /> Md $4.50 <br /> Lg $5.50
+                                                    </p>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                    </dt>                   
+                                    <dt class="col-6">
+                                        <div role="tab">    
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#earlGrey">
+                                        Earl Grey
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="earlGrey" data-parent="#accordian_2">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/earlGrey.jpg" alt="earlGrey" width="150px"/> <hr />
+                                                        Sm $3.50 <br /> Md $4.50 <br /> Lg $5.50
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#spicedChai">
+                                                    Spiced Chai
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="spicedChai" data-parent="#accordian_2">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/spicedChai.jpg" alt="spicedChai" width="150px"/> <hr />
+                                                        Sm $3.50 <br /> Md $4.50 <br /> Lg $5.50
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#blackCurrant">
+                                                Black Currant
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="blackCurrant" data-parent="#accordian_2">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/blackCurrant.jpg" alt="blackCurrant" width="150px"/> <hr />
+                                                        Sm $3.50 <br /> Md $4.50 <br /> Lg $5.50
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#rooibos">
+                                                Rooibos
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="rooibos" data-parent="#accordian_2">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/rooibos.jpg" alt="rooibos" width="150px"/> <hr />
+                                                        Sm $3.50 <br /> Md $4.50 <br /> Lg $5.50
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#peppermint">
+                                                Peppermint
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="peppermint" data-parent="#accordian_2">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/peppermint.jpg" alt="peppermint" width="150px"/> <hr />
+                                                        Sm $3.50 <br /> Md $4.50 <br /> Lg $5.50
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                </dl>
+                            </div>
                         </div>
                     </div>
-                </div>                
-                <div class="col-sm-6">
-                    <div class="card">
-                        <h3 class="card-header text-white">Soups</h3>
-                        <div class="card-body">
-                            <dl class="row">
-                                <dt class="col-6"><a href="#lobsterBisque" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Cup $4.00 <br /> Bowl $7.00">Lobster Bisque</a></dt>
-                                <dt class="col-6"><a href="#frenchOnion" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Cup $4.00 <br /> Bowl $7.00">French Onion</a></dt>
-                                <dt class="col-6"><a href="#clamChowder" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Cup $4.00 <br /> Bowl $7.00">Clam Chowder</a></dt>
-                                <dt class="col-6"><a href="#minestrone" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Cup $4.00 <br /> Bowl $7.00">Minestrone</a></dt>
-                                <dt class="col-6"><a href="#tomatoBasil" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Cup $4.00 <br /> Bowl $7.00">Tomato Basil</a></dt>
-                                <dt class="col-6"><a href="#italianWedding" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Cup $4.00 <br /> Bowl $7.00">Italian Wedding</a></dt>
-                            </dl>
+                    <div class="col-sm-6">
+                        <div class="card">                 
+                            <h2 class="card-header text-white">Soup</h2>
+                            <div class="card-body" id="accordian_3">
+                                <dl class="row">
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a data-toggle="collapse" data-target="#lobsterBisque">
+                                                Lobster Bisque
+                                                </a>
+                                            </p> 
+                                            <div class="collapse" id="lobsterBisque" data-parent="#accordian_3">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/lobsterBisque.jpg" alt="lobsterBisque" width="150px"/> <hr />
+                                                        Cup $4.00 <br /> Bowl $7.00
+                                                    </p>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                    </dt>                   
+                                    <dt class="col-6">
+                                        <div role="tab">    
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#frenchOnion">
+                                        French Onion
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="frenchOnion" data-parent="#accordian_3">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/frenchOnion.jpg" alt="frenchOnion" width="150px"/> <hr />
+                                                        Cup $4.00 <br /> Bowl $7.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#clamChowder">
+                                                    Clam Chowder
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="clamChowder" data-parent="#accordian_3">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/clamChowder.jpg" alt="clamChowder" width="150px"/> <hr />
+                                                        Cup $4.00 <br /> Bowl $7.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#minestrone">
+                                                Minestrone
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="minestrone" data-parent="#accordian_3">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/minestrone.jpg" alt="minestrone" width="150px"/> <hr />
+                                                        Cup $4.00 <br /> Bowl $7.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#tomatoBasil">
+                                                Tomato Basil
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="tomatoBasil" data-parent="#accordian_3">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/tomatoBasil.jpg" alt="tomatoBasil" width="150px"/> <hr />
+                                                        Cup $4.00 <br /> Bowl $7.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#italianWedding">
+                                                Italian Wedding</a>
+                                            </p>
+                                            <div class="collapse" id="italianWedding" data-parent="#accordian_3">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/italianWedding.jpeg" alt="italianWedding" width="150px"/> <hr />
+                                                        Cup $4.00 <br /> Bowl $7.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>    
+                                </dl>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card">
-                        <h3 class="card-header text-white">Salads</h3>
-                        <div class="card-body">
-                            <dl class="row">
-                                <dt class="col-6"><a href="#caesar" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Side $5.00 <br /> Entree $10.00">Caesar</a></dt>
-                                <dt class="col-6"><a href="#nicoise" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Side $5.00 <br /> Entree $10.00">Nicoise</a></dt>
-                                <dt class="col-6"><a href="#steakCobb" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Side $6.00 <br /> Entree $12.00">Steak Cobb</a></dt>
-                                <dt class="col-6"><a href="#waldorfChicken" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Side $5.00 <br /> Entree $10.00">Waldorf Chicken</a></dt>
-                                <dt class="col-6"><a href="#crabLouie" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Side $5.00 <br /> Entree $10.00">Crab Louie</a></dt>
-                                <dt class="col-6"><a href="#wedge" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Side $5.00 <br /> Entree $10.00">Wedge</a></dt>
-                            </dl>
+                    <div class="col-sm-6">
+                        <div class="card">                 
+                            <h2 class="card-header text-white">Salads</h2>
+                            <div class="card-body" id="accordian_4">
+                                <dl class="row">
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a data-toggle="collapse" data-target="#caesar">
+                                                Caesar
+                                                </a>
+                                            </p> 
+                                            <div class="collapse" id="caesar" data-parent="#accordian_4">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/caesar.jpg" alt="caesar" width="150px"/> <hr />
+                                                        Side $5.00 <br /> Entree $10.00
+                                                    </p>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                    </dt>                   
+                                    <dt class="col-6">
+                                        <div role="tab">    
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#nicoise">
+                                        Nicoise
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="nicoise" data-parent="#accordian_4">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/nicoise.jpg" alt="nicoise" width="150px"/> <hr />
+                                                        Side $5.00 <br /> Entree $10.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#steakCobb">
+                                                    Steak Cobb
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="steakCobb" data-parent="#accordian_4">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/steakcobb.jpg" alt="steakCobb" width="150px"/> <hr />
+                                                        Side $5.00 <br /> Entree $10.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#waldorfChicken">
+                                                Waldorf Chicken
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="waldorfChicken" data-parent="#accordian_4">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/waldorfChicken.jpg" alt="waldorfChicken" width="150px"/> <hr />
+                                                        Side $5.00 <br /> Entree $10.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#crabLouie">
+                                                Crab Louie
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="crabLouie" data-parent="#accordian_4">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/crabLouie.jpg" alt="crabLouie" width="150px"/> <hr />
+                                                        Side $5.00 <br /> Entree $10.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#wedge">
+                                                Wedge
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="wedge" data-parent="#accordian_4">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/wedge.jpg" alt="wedge" width="150px"/> <hr />
+                                                        Side $5.00 <br /> Entree $10.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                </dl>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card">
-                        <h3 class="card-header text-white">Sandwiches</h3>
-                        <div class="card-body">
-                            <dl class="row">
-                                <dt class="col-6"><a href="#blt" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Half $6.00 <br /> Full $12.00">BLT</a></dt>
-                                <dt class="col-6"><a href="#turkeyClub" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Half $6.00 <br /> Full $12.00">Turkey Club</a></dt>
-                                <dt class="col-6"><a href="#monteCristo" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Half $6.00 <br /> Full $12.00">Monte Cristo</a></dt>
-                                <dt class="col-6"><a href="#chickenWrap" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Half $6.00 <br /> Full $12.00">Chicken Wrap</a></dt>
-                                <dt class="col-6"><a href="#reuben" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Half $6.00 <br /> Full $12.00">Reuben</a></dt>
-                                <dt class="col-6"><a href="#cucumber" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="Half $5.00 <br /> Full $10.00">Cucumber</a></dt>
-                            </dl>
+                    <div class="col-sm-6">
+                        <div class="card">                 
+                            <h2 class="card-header text-white">Sandwhiches</h2>
+                            <div class="card-body" id="accordian_5">
+                                <dl class="row">
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a data-toggle="collapse" data-target="#blt">
+                                                BLT
+                                                </a>
+                                            </p> 
+                                            <div class="collapse" id="blt" data-parent="#accordian_5">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/blt.jpg" alt="blt" width="150px"/> <hr />
+                                                        Half $6.00 <br /> Full $12.00
+                                                    </p>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                    </dt>                   
+                                    <dt class="col-6">
+                                        <div role="tab">    
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#turkeyClub">
+                                        Turkey Club
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="turkeyClub" data-parent="#accordian_5">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/turkeyClub.jpg" alt="turkeyClub" width="150px"/> <hr />
+                                                        Half $6.00 <br /> Full $12.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#monteCristo">
+                                                    Monte Cristo
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="monteCristo" data-parent="#accordian_5">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/monteCristo.jpg" alt="monteCristo" width="150px"/> <hr />
+                                                        Half $6.00 <br /> Full $12.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#chickenWrap">
+                                                Chicken Wrap
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="chickenWrap" data-parent="#accordian_5">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/chickenWrap.jpg" alt="chickenWrap" width="150px"/> <hr />
+                                                        Half $6.00 <br /> Full $12.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#reuben">
+                                                Reuben
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="reuben" data-parent="#accordian_5">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/reuben.jpg" alt="reuben" width="150px"/> <hr />
+                                                        Half $6.00 <br /> Full $12.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#cucumber">
+                                            Cucumber</a>
+                                            </p>
+                                            <div class="collapse" id="cucumber" data-parent="#accordian_5">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/cucumber.jpg" alt="cucumber" width="150px"/> <hr />
+                                                        Half $6.00 <br /> Full $12.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>    
+                                </dl>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card">
-                        <h3 class="card-header text-white">Desserts</h3>
-                        <div class="card-body">
-                            <dl class="row">
-                                <dt class="col-6"><a href="#carrotCake" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="$6.00">Carrot Cake</a></dt>
-                                <dt class="col-6"><a href="#cheesecake" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="$6.00">Cheesecake</a></dt>
-                                <dt class="col-6"><a href="#cremeBrulee" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="$6.00">Creme Brulee</a></dt>
-                                <dt class="col-6"><a href="#tiramisu" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="$6.00">Tiramisu</a></dt>
-                                <dt class="col-6"><a href="#tuxedoCake" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="$6.00">Tuxedo Cake</a></dt>
-                                <dt class="col-6"><a href="#bananaFoster" role="button" data-toggle="tooltip" data-placement="right" data-html="true" title="$6.00">Banana Foster</a></dt>
-                            </dl>
+                    <div class="col-sm-6">
+                        <div class="card">                 
+                            <h2 class="card-header text-white">Desserts</h2>
+                            <div class="card-body" id="accordian_6">
+                                <dl class="row">
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a data-toggle="collapse" data-target="#carrotCake">
+                                                Carrot Cake
+                                                </a>
+                                            </p> 
+                                            <div class="collapse" id="carrotCake" data-parent="#accordian_6">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/carrotCake.jpg" alt="carrotCake" width="150px"/> <hr />
+                                                        Slice $6.00 <br /> Cake $35.00
+                                                    </p>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                    </dt>                   
+                                    <dt class="col-6">
+                                        <div role="tab">    
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#cheesecake">
+                                        Cheesecake
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="cheesecake" data-parent="#accordian_6">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/cheesecake.jpg" alt="cheesecake" width="150px"/> <hr />
+                                                        Slice $6.00 <br /> Cake $35.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#cremeBrulee">
+                                                    Creme Brulee
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="cremeBrulee" data-parent="#accordian_6">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/cremeBrulee.jpg" alt="cremeBrulee" width="150px"/> <hr />
+                                                        Single $7.00 <br /> Couples $12.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#tiramisu">
+                                                Tiramisu
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="tiramisu" data-parent="#accordian_6">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/tiramisu.jpg" alt="tiramisu" width="150px"/> <hr />
+                                                        Slice $6.00 <br /> Cake $35.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#tuxedoCake">
+                                                Tuxedo Cake
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="tuxedoCake" data-parent="#accordian_6">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/tuxedoCake.jpg" alt="tuxedoCake" width="150px"/> <hr />
+                                                        Slice $6.00 <br /> Cake $35.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dt class="col-6">
+                                        <div role="tab">
+                                            <p>
+                                                <a class="collapsed" data-toggle="collapse" data-target="#bananaFoster">
+                                                Banana Foster</a>
+                                            </p>
+                                            <div class="collapse" id="bananaFoster" data-parent="#accordian_6">
+                                                <div class="card-body">
+                                                    <p class="d-none d-sm-block">
+                                                        <img src="img/bananaFoster.jpg" alt="bananaFoster" width="150px"/> <hr />
+                                                        Single $7.00 <br /> Couples $12.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dt>    
+                                </dl>
+                            </div>
                         </div>
                     </div>
                 </div>
