@@ -17,14 +17,14 @@ $(function() {
 });
 
 // Change the carousel play/pause button color 
-const el = document.getElementById('carouselButton');
-el.addEventListener('mouseover', makeWhite);
-el.addEventListener('mouseout', makePink);
+const play = document.getElementById('carouselButton');
+play.addEventListener('mouseover', makeWhite);
+play.addEventListener('mouseout', makePink);
 function makeWhite() {
-    el.style.background = 'linen';
+    play.style.background = 'linen';
 }
 function makePink() {
-    el.style.background = 'palevioletred';
+    play.style.background = 'palevioletred';
 }
 
 // Make nav-bar logo image fade when hover over
