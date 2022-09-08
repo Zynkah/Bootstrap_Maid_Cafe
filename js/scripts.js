@@ -16,3 +16,14 @@ $(function() {
     });
 });
 
+
+const el = document.getElementById('carouselButton');
+el.addEventListener('mouseover', makeBlue);
+el.addEventListener('mouseout', makePink);
+
+function makeBlue() {
+    el.style.background = 'steelblue';
+}
+function makePink() {
+    el.style.background = 'palevioletred';
+}
