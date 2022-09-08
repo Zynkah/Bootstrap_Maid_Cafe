@@ -26,3 +26,14 @@ function makeWhite() {
 function makePink() {
     el.style.background = 'palevioletred';
 }
+
+// Make nav-bar logo image fade when hover over
+const logo = document.getElementById('logo');
+logo.addEventListener('mouseover', makeFade);
+logo.addEventListener('mouseout', makeUnfade);
+function makeFade() {
+    logo.style.opacity = '0.5';
+}
+function makeUnfade() {
+    logo.style.opacity = '1';
+}
