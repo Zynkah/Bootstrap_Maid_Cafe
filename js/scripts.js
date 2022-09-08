@@ -16,13 +16,12 @@ $(function() {
     });
 });
 
-
+// Change the carousel play/pause button color 
 const el = document.getElementById('carouselButton');
-el.addEventListener('mouseover', makeBlue);
+el.addEventListener('mouseover', makeWhite);
 el.addEventListener('mouseout', makePink);
-
-function makeBlue() {
-    el.style.background = 'steelblue';
+function makeWhite() {
+    el.style.background = 'linen';
 }
 function makePink() {
     el.style.background = 'palevioletred';
