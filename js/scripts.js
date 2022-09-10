@@ -1,7 +1,8 @@
+// Tooltip text
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 });
-$(function() {
+// Carousel play/pause buttons
     $(".carousel").carousel( { interval: 2000 } );
     $("#carouselButton").click(function(){
         if ($("#carouselButton").children("i").hasClass("fa-pause")) {
@@ -14,8 +15,6 @@ $(function() {
             $("#carouselButton").children("i").addClass("fa-pause"); 
         }
     });
-});
-
 // Change the carousel play/pause button color 
 const play = document.getElementById('carouselButton');
 play.addEventListener('mouseover', makeWhite);
@@ -26,7 +25,6 @@ function makeWhite() {
 function makePink() {
     play.style.background = 'palevioletred';
 }
-
 // Make nav-bar logo image fade when hover over
 const logo = document.getElementById('logo');
 logo.addEventListener('mouseover', makeFade);
